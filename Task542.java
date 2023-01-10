@@ -1,8 +1,9 @@
 class Solution {
     public int[][] updateMatrix(int[][] mat) {
-        if(mat == null || mat.length == 0)
+        if(mat == null || mat.length == 0) {
             return mat;
-
+        }
+        
         Queue<int[]> q = new LinkedList<>();
         for(int i = 0; i < mat.length; i++) {
             for(int j = 0; j < mat[0].length; j++) {
