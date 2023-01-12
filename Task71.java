@@ -10,7 +10,9 @@ class Solution {
                 s.push(p[i]);
             }
         }
-        if(s.isEmpty()) return "/";
+        if(s.isEmpty()) {
+            return "/";
+        }
         while(!s.isEmpty()) {
             res = "/" + s.pop() + res;
         }
